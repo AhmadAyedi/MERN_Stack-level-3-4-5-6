@@ -1,0 +1,168 @@
+/*.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create_form input{
+    width: 300px;
+    padding: 10px;
+    border-bottom: 2px solid ;
+    outline: none;
+}
+
+.create_form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.task {
+    display:flex;
+    align-items: center;
+    width: 345px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 35px;
+    padding: 2px 5px 2px 5px;
+    margin-top: 2px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.line_through {
+    text-decoration: line-through;
+}
+
+.checkbox .icon {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.task div span {
+    margin: 0px 5px 0px 4px
+}
+
+.task div .icon {
+    cursor: pointer;
+}*/
+
+/* General Styles */
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Home Container */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Form Styles */
+.create_form {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.create_form input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.create_form input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.create_form button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.create_form button:hover {
+    background: linear-gradient(135deg, #f9d423, #ff4e50);
+}
+
+/* Task Styles */
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    height: 60px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.line_through {
+    text-decoration: line-through;
+}
+
+.checkbox .icon {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.task div span {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.task div .icon {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 25px;
+}
+
+.task div .icon:hover {
+    color: #ddd;
+}
